@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+        }
+        #grad1 {
+          height: 200px;
+          width: 600px;
+          background-color: red;
+          background-image: linear-gradient(to right, red,rgb(226, 122, 140),rgb(212, 145, 20),rgb(146, 221, 146),white,rgb(83, 77, 77))
+        }
+        #grad2 {
+        height: 200px;
+        width: 200px;
+        background-color: red; 
+        background-image: repeating-conic-gradient(rgb(85, 171, 182) 10%, rgb(23, 4, 107) 20%);
+        border-radius: 50%;
+        }
+        #grad3 {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        background-image: radial-gradient(60% 55%, rgb(73, 194, 188), rgb(214, 60, 155),black)
+        }
+        h3{
+            text-align: center;
+            color: rgb(19, 18, 18);
+            text-shadow: 1px 1px 2px rgb(221, 129, 172), 0 0 25px rgb(236, 110, 162), 0 0 5px rgb(192, 87, 131);
+        }
+        .content {
+          position: absolute;
+          z-index: 1;
+          bottom: 0;
+          top: 0;
+          color: #131212;
+          padding: 170px;
+          text-align: center;
+          text-shadow: 1px 1px 2px blue;
+          font-size: 20px;
+        }
+        h2{
+            font-size: 80px;
+            font-weight: bold;
+            background-color: red;
+            background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(to right, red,rgb(226, 122, 140),rgb(212, 145, 20))
+        }
+    </style>
+    </head>
+    <body>
+        <h1> Linear Gradient</h1>
+        <div id="grad1"></div>
+        <div class="content">
+            <h3>Welcome to my world</h3>
+        </div>
+        <h1>Conic Gradient</h1>
+        <div id="grad2"></div>
+        <h1>Radial Gradient</h1>
+        <div id="grad3"></div>
+        <h2>My World</h2>
+
+</body>
+</html>

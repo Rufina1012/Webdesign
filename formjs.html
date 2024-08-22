@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+        body
+        {
+            box-sizing: border-box;
+
+        }
+        .box
+        {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            text-align: center;
+            align-content: center;
+
+        }
+        button
+        {
+            width: 50px;
+            height: 50px;
+            background-color: palevioletred;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="box">
+    <label for="lastName">X</label>
+    <input type="text" id="X" placeholder="Enter X value" style="width: 200px; height: 50px;"><br>
+    <br>
+    <label for="firstname">Y</label>
+    <input type="text" id="Y" placeholder="Enter Y value" style="width: 200px; height: 50px;"><br>
+    <br>
+    <label for="ans"></label>
+    <br>
+    <button type="submit" onclick="add()">+</button>
+    <script>
+        function add(){
+            var X=document.getElementById("X").innerHTML.value;
+            var Y=document.getElementById("Y").innerHTML.value;
+            var Z=X+Y;
+            document.write(`sum of X and Y=${Z}`);
+        }
+    </script>
+    <button type="submit">-</button>
+    <button type="submit">*</button>
+    <button type="submit">/</button>
+    <button type="submit">%</button>
+    </div>
+    </center>
+</body>
+</html>

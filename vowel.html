@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var char=prompt("Enter a character:");
+        switch(char){
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+                document.write("It is a vowel");
+                break;
+            default:
+                if(char>="a" && char<="z"){
+                    document.write("It is a consonant");
+                    break;
+                }
+                else{
+                    document.write("Invalid character")
+                }
+                
+        }
+    </script>
+</body>
+</html>
