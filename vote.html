@@ -8,12 +8,15 @@
 <body>
     <script>
         var age=parseInt(prompt("Enter a age:"));
-        switch(age){
-            case age:
-                if(age>=18){
+        switch(age>=18){
+            case (true):
                 document.write("You are eligible to vote.");
                 break;
-                }
+            case(false):
+                document.write("You are not eligible to vote.");
+                break;
+            default:
+                document.write("Invalid value");
         }
     </script>
 </body>
