@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+<body>
+    <script>
+        var m=parseInt(prompt("Enter a starting value:"));
+        var n=parseInt(prompt("Enter a ending value:"));
+        for(var i=m;i<=n;i++){
+            var t=i;
+            var st=i.toString();
+            var len=st.length;
+            var sum=0;
+            while(t>0){
+                var d=t%10;
+                var t=Math.floor(t/10);
+                sum+=Math.pow(d,len);
+            }
+        if(sum==i){
+            document.write(i+'<br>');
+        }
+        }
+    </script>
+    
+</body>
+</html>
