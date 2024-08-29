@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composite</title>
+</head>
+<body>
+    <script>
+        var m=parseInt(prompt("Enter a starting value:"));
+        var n=parseInt(prompt("Enter a ending value:"));
+        for(i=m;i<=n;i++){
+            for(var j=2;j<i;j++){
+                if(i%j==0){
+                    document.write(i+'<br>');
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
